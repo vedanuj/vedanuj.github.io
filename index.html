@@ -124,22 +124,54 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+          <tr onmouseout="temporal_stop()" onmouseover="temporal_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='portrait_image'><img src='images/iccbr_2.png'  width="160" height="160"></div>
+                <div class="two" id='temporal_image'><img src='images/temporal_2.png'  width="160" height="160"></div>
+                <img src='images/temporal_1.png'  width="160" height="160">
+              </div>
+              <script type="text/javascript">
+                function temporal_start() {
+                  document.getElementById('temporal_image').style.opacity = "1";
+                }
+
+                function temporal_stop() {
+                  document.getElementById('temporal_image').style.opacity = "0";
+                }
+                temporal_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/pdf/1907.08340.pdf">
+                <papertitle>Only Time Can Tell: Discovering Temporal Data for Temporal Modeling</papertitle>
+              </a>
+              <br>
+              Laura Sevilla-Lara, Shengxin Zha, Zhicheng Yan, <strong>Vedanuj Goswami</strong>, Matt Feiszli, Lorenzo Torresani
+              <br>
+              <em>arXiv preprint arXiv:1907.08340</em>, 2019
+              <br>
+              <a href="https://arxiv.org/abs/1907.08340">arxiv</a> /
+              <a href="https://dblp.org/rec/bib/journals/corr/abs-1907-08340">bibtex</a>
+              <p></p>
+              <p>A methodology to discover the relevance of temporal information in action classes and use it to identify categories that contain more temporal information <em>(temporal classes)</em>. These set of classes are used to benchmark current video models, revealing a network's ability to model temporal information and also for training that boosts accuracy on the temporal categories.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="iccbr_stop()" onmouseover="iccbr_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='iccbr_image'><img src='images/iccbr_2.png'  width="160" height="160"></div>
                 <img src='images/iccbr_1.jpeg'  width="160" height="160">
               </div>
               <script type="text/javascript">
-                function portrait_start() {
-                  document.getElementById('portrait_image').style.opacity = "1";
+                function iccbr_start() {
+                  document.getElementById('iccbr_image').style.opacity = "1";
                 }
 
-                function portrait_stop() {
-                  document.getElementById('portrait_image').style.opacity = "0";
+                function iccbr_stop() {
+                  document.getElementById('iccbr_image').style.opacity = "0";
                 }
-                portrait_stop()
+                iccbr_stop()
               </script>
             </td>
             <td valign="top" width="75%">
@@ -152,28 +184,29 @@
               <em>International Conference on Case Based Reasoning (ICCBR)</em>, 2016
               <br>
               <a href="http://dilab.gatech.edu/test/wp-content/uploads/2016/11/ICCBR2016.pdf">pdf</a> /
-              <a href="http://dilab.gatech.edu/ibid-poster-presented-in-iccbr-2016/">blog post</a> /
+              <a href="http://dilab.gatech.edu/publications/knowledge-extraction-and-annotation-for-cross-domain-textual-case-based-reasoning-in-biologically-inspired-design/">blog</a> /
+              <a href="http://dilab.gatech.edu/ibid-poster-presented-in-iccbr-2016/">poster</a> /
               <a href="https://dblp.org/rec/bibtex/conf/iccbr/RugaberBGSAKKKS16">bibtex</a>
               <p></p>
               <p>Automated NLP based technique for extracting partial SBF <em>(Structure, Behavior, Function)</em> models of biological systems from natural language documents for potential use in biologically inspired design.</p>
             </td>
           </tr>
 
-           <tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
+           <tr onmouseout="acalci_stop()" onmouseover="acalci_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='aperture_image'><img src='images/acalci_3.jpg'   width="160" height="160"></div>
+                <div class="two" id='acalci_image'><img src='images/acalci_3.jpg'   width="160" height="160"></div>
                 <img src='images/acalci_2.png'   width="160" height="160">
               </div>
               <script type="text/javascript">
-                function aperture_start() {
-                  document.getElementById('aperture_image').style.opacity = "1";
+                function acalci_start() {
+                  document.getElementById('acalci_image').style.opacity = "1";
                 }
 
-                function aperture_stop() {
-                  document.getElementById('aperture_image').style.opacity = "0";
+                function acalci_stop() {
+                  document.getElementById('acalci_image').style.opacity = "0";
                 }
-                aperture_stop()
+                acalci_stop()
               </script>
             </td>
             <td valign="top" width="75%">
@@ -192,14 +225,14 @@
             </td>
           </tr>
         </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
               <heading>Course Projects</heading>
             </td>
           </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="20">
+        </table> -->
+        <!-- <table width="100%" align="center" border="0" cellpadding="20">
           <tr>
             <tr onmouseout="ig_stop()" onmouseover="ig_start()">
               <td width="25%">
@@ -299,7 +332,7 @@
               </p>
             </td>
           </tr>
-      </table>
+      </table> -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
